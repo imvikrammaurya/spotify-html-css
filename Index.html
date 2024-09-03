@@ -1,198 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Spotify - Web music player for every one</title>
-    <link rel="stylesheet" href="./Css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="icon" href="Images/logo.png">
-
-
-</head>
-<body class="body">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="icon" href="Images/logo.png" />
+  </head>
+  <body class="body">
     <div class="main">
-
-        <!-- side-bar starts here -->
-        <div class="side-bar">
-
-            <div class="nav">
-                
-                <div class="nav-option" style="opacity: 1;">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="#">Home</a>
-                </div>
-               
-            </div>
-            <div class="nav">
-               
-                <div class="nav-option">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">search</a>
-                </div>
-
-            </div>
-
-
-            <div class="library">
-                
-                <div class="options">
-                    
-                    <div class="lib-option nav-option">
-                        <img src="Images\library_icon.png" alt="library icon">
-                        <a href="#">Your library</a>
-                    </div>
-
-                   <div class="icons">
-                    <i class="fa-solid fa-plus"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
-                   </div>
-
-                </div>
-
-                <div class="lib-boxes">
-
-                 <div class="box">
-                    <p class="box-p1">Create your first playlist</p>
-                    <p class="box-p2">it's easy, we'll help you</p>
-                    <button class="badge">Create Playlist</button>
-                 </div>
-                 <div class="box">
-                    <p class="box-p1">Let's find some podcasts to follow</p>
-                    <p class="box-p2">We'll keep you updated on new episodes</p>
-                    <button class="badge">Browse Podcasts</button>
-                 </div>
-                </div>
-
-                </div>
+      <!-- side-bar starts here -->
+      <div class="side-bar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">search</a>
+          </div>
         </div>
 
-        <div class="main-content">
-           
-            <div class="sticky-nav">
-                <div class="sticky-nav-icons">
-                    <img src="./Images/backward_icon.png" alt="">
-                <img src="./Images/forward_icon.png" alt="" class="hide">
-                </div>
-                <div class="sticky-nav-options">
-                    <button class="badge nav-item hide">Explore Premium</button>
-                <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin: 5px;"></i>Install App</button>
-                <i class="fa-regular fa-user nav-item"></i>
-                </div>
-                
-
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="Images\library_icon.png" alt="library icon" />
+              <a href="#">Your library</a>
             </div>
 
-                <h2>Recently played</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <img src="./Images/card1img.jpeg" alt="" class="card-img">
-                        <p class="card-title">Top 50 - Global</p>
-                        <p class="card-info">Your daily update of the most played tra...</p>
-                    </div>
-                </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
 
-                <h2>Trending Now India</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <img src="./Images/card2img.jpeg" alt="" class="card-img">
-                        <p class="card-title">Heart Touching Love</p>
-                        <p class="card-info">Listen your love, to feel magical...</p>
-                    </div>
-                    <div class="card">
-                        <img src="./Images/card3img.jpeg" alt="" class="card-img">
-                        <p class="card-title">Lofi Mix - 1Min</p>
-                        <p class="card-info">Lofi songs that makes your sole soft...</p>
-                    </div>
-                    <div class="card">
-                        <img src="./Images/card4img.jpeg" alt="" class="card-img">
-                        <p class="card-title">After Naa Ready</p>
-                        <p class="card-info">Get all the songs, after naa ready...</p>
-                    </div>
-                    <div class="card">
-                        <img src="./Images/card5img.jpeg" alt="" class="card-img">
-                        <p class="card-title">Weekly Music Charts - Global</p>
-                        <p class="card-info">Best weekly music around the glob...</p>
-                    </div>
-                    <div class="card">
-                        <img src="./Images/card6img.jpeg" alt="" class="card-img">
-                        <p class="card-title">Top Songs India - Global</p>
-                        <p class="card-info">Best weekly musics all around India...</p>
-                    </div>
-                </div>
-
-                <h2>Featured Charts</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <img src="./Images/card1img.jpeg" alt="" class="card-img">
-                        <p class="card-title">Top 50 - Global</p>
-                        <p class="card-info">Your daily update of the most played tra...</p>
-                    </div>
-                    <div class="card">
-                        <img src="./Images/card2img.jpeg" alt="" class="card-img">
-                        <p class="card-title">Heart Touching Love</p>
-                        <p class="card-info">Listen your love, to feel magical...</p>
-                    </div>
-                    <div class="card">
-                        <img src="./Images/card3img.jpeg" alt="" class="card-img">
-                        <p class="card-title">Maray Paas Tum Ho</p>
-                        <p class="card-info">Lofi songs that makes your sole soft...</p>
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="line"></div>
-                </div>
-                
+          <div class="lib-boxes">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">it's easy, we'll help you</p>
+              <button class="badge">Create Playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse Podcasts</button>
+            </div>
+          </div>
         </div>
-        <div class="music-player">
+      </div>
 
-            <div class="album-footer">
-                <img src="./Images/General20Image.webp" class="album-img-footer">
-                <div class="album-p-div">
-                    <p class="album-p1">Daylight</p>
-                <p class="album-p2">Devid Kushner</p>
-                </div>
-                <i class="fa-regular fa-heart album-heart"></i>
-                <span class="material-symbols-outlined album-mini">picture_in_picture_alt</span>
-                
-            </div>
-
-
-            <div class="player">
-                <div class="player-controls">
-                    <img src="./Images/player_icon1.png" class="player-control-icon">
-                    <img src="./Images/player_icon2.png" class="player-control-icon">
-                    <img src="./Images/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
-                    <img src="./Images/player_icon4.png" class="player-control-icon">
-                    <img src="./Images/player_icon5.png" class="player-control-icon">
-                </div>
-                <div class="playback-bar">
-                    <span class="curr-time">00.00</span>
-                    <input type="range" min="0" max="100" class="progress-bar" step="1">
-                    <span class="tot-time">03.33</span>
-                </div>
-            </div>
-
-
-            <div class="controls">
-                <span class="material-symbols-outlined control-1">smart_display</span>
-                <span class="material-symbols-outlined control-2"> edit </span>
-                <span class="material-symbols-outlined control-3">menu</span>
-                <span class="material-symbols-outlined control-4">person_book</span>
-                <span class="material-symbols-outlined control-5">volume_up</span>
-                <input type="range" min="0" max="100" class="progress-bar-controls control-6" step="1">
-                <span class="material-symbols-outlined controles.mini control-7">picture_in_picture_alt</span>
-                <i class="fa-solid fa-up-right-and-down-left-from-center control-8"></i>
-
-            </div>
-
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./Images/backward_icon.png" alt="" />
+            <img src="./Images/forward_icon.png" alt="" class="hide" />
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin: 5px"></i
+              >Install App
+            </button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
         </div>
+
+        <h2>Recently played</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./Images/card1img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily update of the most played tra...</p>
+          </div>
+        </div>
+
+        <h2>Trending Now India</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./Images/card2img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Heart Touching Love</p>
+            <p class="card-info">Listen your love, to feel magical...</p>
+          </div>
+          <div class="card">
+            <img src="./Images/card3img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Lofi Mix - 1Min</p>
+            <p class="card-info">Lofi songs that makes your sole soft...</p>
+          </div>
+          <div class="card">
+            <img src="./Images/card4img.jpeg" alt="" class="card-img" />
+            <p class="card-title">After Naa Ready</p>
+            <p class="card-info">Get all the songs, after naa ready...</p>
+          </div>
+          <div class="card">
+            <img src="./Images/card5img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Weekly Music Charts - Global</p>
+            <p class="card-info">Best weekly music around the glob...</p>
+          </div>
+          <div class="card">
+            <img src="./Images/card6img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top Songs India - Global</p>
+            <p class="card-info">Best weekly musics all around India...</p>
+          </div>
+        </div>
+
+        <h2>Featured Charts</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="./Images/card1img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily update of the most played tra...</p>
+          </div>
+          <div class="card">
+            <img src="./Images/card2img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Heart Touching Love</p>
+            <p class="card-info">Listen your love, to feel magical...</p>
+          </div>
+          <div class="card">
+            <img src="./Images/card3img.jpeg" alt="" class="card-img" />
+            <p class="card-title">Maray Paas Tum Ho</p>
+            <p class="card-info">Lofi songs that makes your sole soft...</p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="album-footer">
+          <img src="./Images/General20Image.webp" class="album-img-footer" />
+          <div class="album-p-div">
+            <p class="album-p1">Daylight</p>
+            <p class="album-p2">Devid Kushner</p>
+          </div>
+          <i class="fa-regular fa-heart album-heart"></i>
+          <span class="material-symbols-outlined album-mini"
+            >picture_in_picture_alt</span
+          >
+        </div>
+
+        <div class="player">
+          <div class="player-controls">
+            <img src="./Images/player_icon1.png" class="player-control-icon" />
+            <img src="./Images/player_icon2.png" class="player-control-icon" />
+            <img
+              src="./Images/player_icon3.png"
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="./Images/player_icon4.png" class="player-control-icon" />
+            <img src="./Images/player_icon5.png" class="player-control-icon" />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00.00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="tot-time">03.33</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <span class="material-symbols-outlined control-1">smart_display</span>
+          <span class="material-symbols-outlined control-2"> edit </span>
+          <span class="material-symbols-outlined control-3">menu</span>
+          <span class="material-symbols-outlined control-4">person_book</span>
+          <span class="material-symbols-outlined control-5">volume_up</span>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            class="progress-bar-controls control-6"
+            step="1"
+          />
+          <span class="material-symbols-outlined controles.mini control-7"
+            >picture_in_picture_alt</span
+          >
+          <i
+            class="fa-solid fa-up-right-and-down-left-from-center control-8"
+          ></i>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
